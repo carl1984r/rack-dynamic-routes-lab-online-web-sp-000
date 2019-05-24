@@ -12,6 +12,7 @@ class Application
       item = @@items.find{|i| i.name == item_name}
       if @@items.include?(item)
         resp.write item.price
+        binding.pry
 
       else
         resp.write "Item not found"
